@@ -1,0 +1,1 @@
+web gunicorn Bai2.wsgi:application --log-file -
