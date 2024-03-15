@@ -1,10 +1,13 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block title %} test {% endblock %}
+{% block link %}
+    <link rel="stylesheet" href="{% static "css/col.css" %}">
+{% endblock %}
 {% block content %}
-    <div id="container" class="container d-flex flex-column align-content-center justify-content-center">
-        <div class="d-flex flex-row align-content-center justify-content-center">
-            <div id="demo" class="carousel slide col-sm-8 col-lg-8 col-md-8 col-xl-8 ml-2" data-bs-ride="carousel">
+    <div id="container" class="container d-flex flex-column align-content-center ">
+        <div class="d-flex flex-row align-content-center justify-content-between banner">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
                 <!-- Indicators/dots -->
                 <div class="carousel-indicators">
@@ -37,9 +40,9 @@
                     <span class="carousel-control-next-icon"></span>
                 </button>
             </div>
-            <div id="content-right" class="d-flex flex-column justify-content-between col-sm-4 col-lg-4 col-md-4 col-xl-4">
-                <img style="height: 95%" src="https://cf.shopee.vn/file/vn-50009109-fed2b689331aeb813aa4ececbed5748b_xhdpi">
-                <img style="height: 95%" src="https://cf.shopee.vn/file/vn-50009109-47c1c134ed5139e7eef5bdd8160aa7bc_xhdpi">
+            <div id="content-right" class="d-flex flex-column justify-content-between">
+                <img class="img_banner" src="https://cf.shopee.vn/file/vn-50009109-fed2b689331aeb813aa4ececbed5748b_xhdpi">
+                <img class="img_banner" src="https://cf.shopee.vn/file/vn-50009109-47c1c134ed5139e7eef5bdd8160aa7bc_xhdpi">
             </div>
         </div>
     </div>
