@@ -83,7 +83,7 @@ DATABASES = {
     # }
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'hocphan10',
+        'NAME': 'hoc_phan_10',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': '127.0.0.1',
