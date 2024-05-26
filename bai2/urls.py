@@ -19,6 +19,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # python manage.py createsuperuser
     path("blog/", include('blog.urls')),
 ]
     

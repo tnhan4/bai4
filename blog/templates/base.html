@@ -9,59 +9,56 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <title>{% block title %} {% endblock %}</title>
-
 </head>
 
 <body>
     <header>
-        <div style="background-color: orangered; width: 100%; height: 100px;"></div>
+        <div style="background-color: orangered; padding: 0 120px ; height: 50px;" class="d-flex align-item-center justify-content-between">
+            <span style="color: white; padding-top: 5px;">Tuyển nhân viên   |   Tải ứng dụng   |   Ngôn ngữ  |   Hỗ trợ   |   Thông báo</span>
+            <span><a href="#" style="color: white; text-decoration: none;">Đăng ký</a> | <a href="#" style="color: white;text-decoration: none;">Đăng nhập</a></span>
+        </div>
+        <div style="background-color: orangered; width: 100%; height: 70px;" class="d-flex align-item-center justify-content-center">
+            <input type="text" style="width: 1100px; height: 60%;border-radius: 3px; border: none;" placeholder="Tìm kiếm ở đây">
+        </div>
     </header>
     <!-- carousel -->
-    <div class="d-flex flex-row align-content-center justify-content-center" style="width: 100%;">
-        <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-            <!-- Indicators/dots -->
-            <div class="carousel-indicators w-50">
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target=" #demo" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-            </div>
-
-            <!-- The slideshow/carousel -->
-            <div class=" carousel-inner ">
-                <div class="carousel-item active ">
-                    <img src="https://cf.shopee.vn/file/vn-50009109-4159d39eeab52b6f89bfae5e29cb0abd_xxhdpi " class="d-block" style="width: 100%;">
-                </div>
-                <div class="carousel-item ">
-                    <img src="https://cf.shopee.vn/file/vn-50009109-f12976db91f5daf8b2017b1212e6a96b_xxhdpi " class="d-block" style="width: 100%;">
-                </div>
-                <div class="carousel-item ">
-                    <img src="https://cf.shopee.vn/file/vn-50009109-6c066000c265a7aab7dade70b449535d_xxhdpi " class="d-block" style="width: 100%;">
-                </div>
-            </div>
-
-            <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon "></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                <span class="carousel-control-next-icon "></span>
-            </button>
-        </div>
-        <div class="img " style="width: 30%; ">
-            <img src="https://cf.shopee.vn/file/vn-50009109-fed2b689331aeb813aa4ececbed5748b_xhdpi " style="width: 394px; height: 115px;">
-            <img src="https://cf.shopee.vn/file/vn-50009109-47c1c134ed5139e7eef5bdd8160aa7bc_xhdpi " style="width: 394px; height: 115px;">
+    <div class="d-flex flex-row align-content-center justify-content-center" style="width: 100%; margin-top: 20px;">
+        <div style="margin-left: 200px;"><img src="https://cf.shopee.vn/file/vn-50009109-4159d39eeab52b6f89bfae5e29cb0abd_xxhdpi" alt=""></div>
+        <div class="img " style="margin-left: 5px;">
+            <img src="https://cf.shopee.vn/file/vn-50009109-fed2b689331aeb813aa4ececbed5748b_xhdpi " style="width: 410px; height: 131px; margin-bottom: 5px;">
+            <img src="https://cf.shopee.vn/file/vn-50009109-47c1c134ed5139e7eef5bdd8160aa7bc_xhdpi " style="width: 410px; height: 131px;">
         </div>
     </div>
 
     {% block content %} {% endblock %}
-    <footer>
+    <h5 style="color: orangered;" class="d-flex align-content-center justify-content-center">Gợi ý hôm nay</h5>
+    <div style="background-color: orangered; height: 7px;"></div>
+    <footer style="background-color: white">
+        <p>- Trang web thông minh với đủ mọi tiện nghi</p>
+        <p>- Đầy đủ mặt hàng</p>
+        <p>- Có trang web + app</p>
+        <p>- Nhiều cơ sở, chi nhánh</p>
+        <hr>
         <div class=" row ">
             <div class="col-lg-4 col-sm-1 text-center ">
-                <p>thông tin liên hệ</p>
+                <h5>thông tin liên hệ</h5>
+                <p>facebook
+                </p>
+                <p>instagram</p>
+                <p>Linkedln</p>
             </div>
-            <div class="col-lg-4 text-center ">Các web liên quan</div>
-            <div class="col-lg-4 text-center ">Các câu hỏi thường gặp</div>
+            <div class="col-lg-4 text-center ">
+                <h5>Các web liên quan</h5>
+                <p>shoppee.vn</p>
+                <p>blog</p>
+                <p>app</p>
+            </div>
+            <div class="col-lg-4 text-center ">
+                <h5>Các câu hỏi thường gặp</h5>
+                <p>Trang web viết về gì?</p>
+                <p>Lí do tạo ra trang web</p>
+                <p>Đội ngũ nhân viên</p>
+            </div>
         </div>
 
     </footer>

@@ -1,0 +1,16 @@
+{% extends 'base.html' %} 
+{% block content %} 
+{% if product %}
+<div class="d-flex flex-row">
+    <img class="w-50" src={{ product.img.url }} alt="{{ product.name }} ">
+    <div>
+        <h2 style="color: orangered;">{{ product.name }}</h2>
+        <!-- Thêm các thông tin khác về sản phẩm nếu cần -->
+        <h4 style="color:orangered">Mô tả: {{ product.description}}</h4>
+        <h4 style="color:orangered">Giá: {{product.price}}</h4>
+    </div>
+</div>
+{% else %}
+<p>Sản phẩm không tồn tại.</p>
+{% endif %}
+{% endblock %}
