@@ -13,7 +13,11 @@ th {
     margin-right: 1.5em;
 }
 
+<<<<<<< HEAD
 .viewlink, .addlink, .changelink, .hidelink {
+=======
+.viewlink, .addlink, .changelink {
+>>>>>>> 4f5fd1a46dd839d266110b0fc13636794b68cd55
     padding-left: 0;
     padding-right: 16px;
     background-position: 100% 1px;
@@ -296,7 +300,10 @@ form .form-row p.datetime {
     margin-left: inherit;
     margin-right: 2px;
 }
+<<<<<<< HEAD
 
 .selector .selector-chooser {
     margin: 0;
 }
+=======
+>>>>>>> 4f5fd1a46dd839d266110b0fc13636794b68cd55
